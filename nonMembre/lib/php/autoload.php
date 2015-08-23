@@ -1,7 +1,7 @@
 <?php
 function autoload($nom_classe) {
-    if(file_exists('./nonmembre/lib/php/classes/'.$nom_classe.'.class.php')) {
-        require './nonmembre/lib/php/classes/'.$nom_classe.'.class.php';
+    if(file_exists('./nonMembre/lib/php/classes/'.$nom_classe.'.class.php')) {
+        require './nonMembre/lib/php/classes/'.$nom_classe.'.class.php';
     }    
 }
 
