@@ -24,10 +24,10 @@
     <table>
         <tr>
             <td>
-                <img src="./admin/images/fruit_produit_nm.jpg" alt="fruits" />
+                <img src="./admin/images/fruit_produit_nm.jpg" alt="tpb" />
             </td>
             <td>
-                <img src="./admin/images/legume_produit_nm.jpg" alt="legumes" />
+                <img src="./admin/images/legume_produit_nm.jpg" alt="hc" />
             </td>
         </tr>
     </table>

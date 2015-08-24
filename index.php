@@ -18,7 +18,12 @@ and open the template in the editor.
     }
     
     
-    
+    $scripts = array();
+    $i=0;
+    foreach(glob('./admin/lib/js/jquery/*.js')as $js){
+        $fichierJs[$i] = $js;
+        $i++;
+    }
     
 ?>
 
@@ -27,7 +32,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Comics online</title>
         <link rel="stylesheet" type="text/css" href="./admin/lib/css/style.css"/>
-        
+        <?php
+            foreach($fichierJs as $js){
+        ?>
+        <script type="text/javascript" src="<?php print $js; ?>"></script>
+        <?php
+            }
+        ?>
+        <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryInscription.js"></script>
     </head>
     <body>
         <div id="page">
