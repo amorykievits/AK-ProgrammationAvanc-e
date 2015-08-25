@@ -40,6 +40,7 @@ and open the template in the editor.
             }
         ?>
         <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryInscription.js"></script>
+        <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryAdmin.js"></script>
     </head>
     <body>
         <div id="page">
@@ -48,7 +49,7 @@ and open the template in the editor.
                 <p>
                 <?php
                     if(isset($_SESSION['admin'])){
-                        print "Bienvenue ".$_SESSION['nomUser']." ".$_SESSION['prenomUser'];
+                        print "Bienvenue ".$_SESSION['nom']." ".$_SESSION['prenom'];
                     }
                     
                 ?>

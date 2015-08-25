@@ -1,7 +1,6 @@
 $(document).ready(function(){
    $("#inscription_form").fadeIn(5000);
    $("#inscription").focus();
-   //alert("bonjour");
    $('input#submit_inscription').on('click',function (event){
        nom = $("#nom").val();
        prenom = $("#prenom").val();
@@ -24,7 +23,6 @@ $(document).ready(function(){
                success: function (data_du_php) {
                    if(data_du_php.retour == 1) {
                        $('#inscription_form').remove();
-                       //alert(data_du_php.retour);
                        window.location.href = "./index.php?page=accueil_nm";
                        
                    }
