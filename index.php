@@ -13,9 +13,9 @@ and open the template in the editor.
         include('./admin/lib/php/liste_include.php');
     }
     $db = Connexion::getInstance($dsn,$user,$pass);
-    if($db){
+    /*if($db){
         print"connexion ok";
-    }
+    }*/
     
     
     $scripts = array();
