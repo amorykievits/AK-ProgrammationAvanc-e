@@ -11,14 +11,11 @@ $(document).ready(function(){
        cp = $("#cp").val();
        pays = $("#pays").val();
        password = $("#password").val();
-       //alert(nom_user);
        if(($.trim(nom)!= '') && $.trim(prenom != '')){
            var data_form = $('form#form_inscription').serialize();
-           //alert(data_form);
            $.ajax({
                type: 'POST',
                data: data_form,
-               //dataType: "json",
                url: './admin/lib/php/ajax/AjaxInscription.php',
                success: function (data_du_php) {
                    if(data_du_php.retour == 1) {

@@ -15,7 +15,7 @@
     if(isset($_GET['valeur'])) {
         $_SESSION['valeur'] = $_GET['valeur'];
     }
-    //print $_SESSION['valeur'];
+    ;
     $_SESSION['choix'] = "default";  
 ?>
 <h2>Nouvelle commande</h2>
@@ -86,15 +86,14 @@
     ?>
     <?php
         if($_SESSION['valeur']=="ajout"){
-            //$_SESSION['valeur']="default";
+            
             if(!isset($_SESSION['choix'])){
             $_SESSION['choix'] = "default";            
             }
-            //print $_SESSION['choix'];
+            
             if(isset($_GET['choix'])) {
                 $_SESSION['choix'] = $_GET['choix'];
-                /*print $_SESSION['choix'];
-                print "passe par ici";*/
+                
             }
             if($_SESSION['choix']=="default"){
             ?>
