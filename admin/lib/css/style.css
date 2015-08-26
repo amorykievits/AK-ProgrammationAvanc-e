@@ -1,10 +1,250 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 26-août-2015, 15:33:34
-    Author     : France
-*/
+
+html {
+    background-color: #FFE4C4;
+}
+
+
+#page {
+    margin: 0 auto;
+    width: 80%;
+    color: #A0522D;
+}
+
+header {
+    background-image: linear-gradient(#A0522D,#DEB887);
+    height: 190px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    line-height: 140px;
+}
+
+header p {
+    color: white;
+}
+
+
+#menu {
+    background-color: #DEB887;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 100%
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    float: left;
+    width: 20%;
+    line-height: 40px;
+    background-color: #DEB887;
+    color: #A0522D;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li a:hover{
+    background-color: #A0522D;
+    color: #DEB887;
+}
+
+
+#choix {
+    background-color: #DEB887;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 100%
+}
+
+#choix ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#choix ul li a {
+    display: block;
+    float: left;
+    width: 50%;
+    line-height: 40px;
+    background-color: #DEB887;
+    color: #A0522D;
+    text-decoration: none;
+    text-align: center;
+}
+
+#choix ul li a:hover{
+    background-color: #A0522D;
+    color: #DEB887;
+}
+
+
+#table_accueil_m table{
+    width:100%;
+}
+
+#th1 {
+    width: 25%;
+    border: 1px solid #A0522D;
+}
+
+#th2 {
+    width: 75%;
+    border: 2px solid red;
+}
+
+
+#table_default table {
+    width: 100%;
+}
+
+#table_default img {
+    width: 100%;
+}
+
+
+#table_produit_nm table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_produit_nm td {
+    width: 50%;
+    border: 1px solid #A0522D;
+}
+
+#table_produit_nm img {
+    height: 100px;
+}
+
+
+#contenu {
+    margin: 0 auto;
+}
+
+
+#formulaire_nm {
+    width: 17.5%;
+    border: 2px solid #A0522D;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #DEB887;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+    color: #A0522D;
+}
+
+
+#table_newfacture_m {
+    width: 100%;
+}
+
+#table_newfacture_m table {
+    width: 100%;
+    border: 1px solid #A0522D;
+    border-collapse: collapse;
+}
+
+#table_newfacture_m tfoot td{
+    width: 25%;
+}
+
+#tablethlnf {
+    width: 10%;
+    border: 1px solid #A0522D;
+}
+
+#tablethprnf {
+    width: 70%;
+    border: 1px solid #A0522D;
+}
+
+#tablethqnf {
+    width: 10%;
+    border: 1px solid #A0522D;
+}
+
+#tablethpxnf {
+    width: 10%;
+    border: 1px solid #A0522D;
+}
+
+#table_newfacture_m td {
+    border: 1px solid #A0522D;
+}
+
+#table_newfacture_m tfoot {
+    text-align: right;
+}
+
+
+#table_detail_produit table{
+    width: 100%;
+    height: 120px;
+}
+
+#table_detail_produit td {
+    width: 50%;
+}
+#table_detail_produit img {
+    height: 100px;
+}
+
+
+#table_facture_m table {
+    width: 100%;
+    border: 1px solid #A0522D;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+#table_facture_m td {
+    width: 33%;
+    border: 1px solid #A0522D;
+}
+
+#table_facture_m a{
+    text-decoration: none;
+    color: #A0522D;
+}
+
+#table_facture_m visited{
+    color: #DEB887;
+}
+
+#table_facture_detail table{
+    border: 1px solid #A0522D;
+    border-collapse:collapse;
+}
+
+#table_facture_detail td{
+    border: 1px solid #A0522D;
+}
+
+#table_facture_detail th{
+    border: 1px solid #A0522D;
+    background-color: #DEB887;
+}
+
+
 

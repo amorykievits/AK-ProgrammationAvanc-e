@@ -14,7 +14,6 @@
         $id_facture=$_SESSION['test'];
         $retour=$mg->DeleteDetailFacture($id_prod,$id_facture);
         $i++;
-        print $retour;
         if($retour==1){
             $flag=true;
         }
