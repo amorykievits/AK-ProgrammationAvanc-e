@@ -20,48 +20,33 @@
             
         }
         
-        public function UpdateDetailFacture($idproduit,$quantite){
+        
+        public function DeleteDetailFacture($id_prod,$id_facture){
             try{
-                $query="select updateDetail(:idproduit,:quantite) as retour";
-                $prod=$idproduit;
-                $quant=$quantite;
+                $query="select delete_detail(:id_facture,:id_prod) as retour";
+                $prod=$id_prod;
+                $fact=$id_facture;
                 $sql=$this->_db->prepare($query);
-                $sql->bindValue(':idproduit',$prod);
-                $sql->bindValue(':quantite',$quant);
+                $sql->bindValue(':id_prod',$prod);
+                $sql->bindValue(':id_facture',$fact);
                 $sql->execute();
                 $retour=$sql->fetchColumn(0);
-            } catch (PDOException $e) {
-                print $e->getMessage();
+            } catch (Exception $ex) {
+                print $ex->getMessage();
             }
             return $retour;
         }
         
-        public function DeleteDetailFacture($idproduit,$idfacture){
+        public function DeleteFacture($id_facture){
             try{
-                $query="select deleteDetail(:idproduit,:idfacture) as retour";
-                $prod=$idproduit;
-                $fact=$idfacture;
+                $query="select delete_facture(:id_facture) as retour";
+                $fact=$id_facture;
                 $sql=$this->_db->prepare($query);
-                $sql->bindValue(':idproduit',$prod);
-                $sql->bindValue(':idfacture',$fact);
+                $sql->bindValue(':id_facture',$fact);
                 $sql->execute();
                 $retour=$sql->fetchColumn(0);
             } catch (Exception $ex) {
-                print $e->getMessage();
-            }
-            return $retour;
-        }
-        
-        public function DeleteFacture($idfacture){
-            try{
-                $query="select deleteFacture(:idfacture) as retour";
-                $fact=$idfacture;
-                $sql=$this->_db->prepare($query);
-                $sql->bindValue(':idfacture',$fact);
-                $sql->execute();
-                $retour=$sql->fetchColumn(0);
-            } catch (Exception $ex) {
-                print $e->getMessage();
+                print $ex->getMessage();
             }
             return $retour;
         }

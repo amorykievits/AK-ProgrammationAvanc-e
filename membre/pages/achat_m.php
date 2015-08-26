@@ -15,7 +15,7 @@
     if(isset($_GET['valeur'])) {
         $_SESSION['valeur'] = $_GET['valeur'];
     }
-    print $_SESSION['valeur'];
+    //print $_SESSION['valeur'];
     $_SESSION['choix'] = "default";  
 ?>
 <h2>Nouvelle commande</h2>
@@ -76,8 +76,8 @@
         if($_SESSION['lignedf']!=0){
     ?>
     <table>
-        <td width="10%"><a href="index.php?page=update_m&test=<?php print $_SESSION['test'];/*$_SESSION['lignedf']=0*/;?>">Valider</a>             
-        <td width="75%"><a href="index.php?page=delete_m&<?php print $_SESSION['test'];/*$_SESSION['lignedf']=0;*/?>">Annuler</a></td>
+        <td width="10%"><a href="index.php?page=validation_commande&test=<?php print $_SESSION['test'];;?>">Valider</a>             
+        <td width="75%"><a href="index.php?page=annuler_commande&<?php print $_SESSION['test'];?>">Annuler</a></td>
         <td width="15%">Total: <?php if($_SESSION['lignedf']!=0){print $total;}else{print 0;}?> €</td>
     </table>
     <?php
