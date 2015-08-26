@@ -50,10 +50,10 @@
             }
             return $retour;
         }
-        public function getFacture($iduser){
-            $query="select * from facture where id_user=:iduser";
+        public function getFacture($id_utilisateur){
+            $query="select * from facture where id_utilisateur=:id_utilisateur";
             $resultset=$this->_db->prepare($query);
-            $resultset->bindValue(':iduser',$iduser);
+            $resultset->bindValue(':id_utilisateur',$id_utilisateur);
             $resultset->execute();
             $nbr=$resultset->rowCount();
             while($data=$resultset->fetch()) {
