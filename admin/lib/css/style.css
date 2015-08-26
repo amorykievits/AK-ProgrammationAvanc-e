@@ -135,13 +135,13 @@ ul li a:hover{
 
 
 #formulaire_nm {
-    width: 17.5%;
+    width: 17%;
     border: 2px solid #A0522D;
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 25px;
-    padding: 20px;
+    margin-top: 15px;
+    padding: 55px;
     background-color: #DEB887;
 }
 
