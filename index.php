@@ -41,6 +41,7 @@ and open the template in the editor.
         ?>
         <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryInscription.js"></script>
         <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryAdmin.js"></script>
+        <script type="text/javascript" src="./admin/lib/js/fonctionsJqueryProduit.js"></script> 
     </head>
     <body>
         <div id="page">

@@ -244,7 +244,7 @@
         <?php
         }
         if($_SESSION['valeur']=="detail"){
-            include('./membre/pages/detail_produit_m.php');
+            include('./membre/pages/detail_produit.php');
             $_SESSION['valeur']="default";
         }
     ?>

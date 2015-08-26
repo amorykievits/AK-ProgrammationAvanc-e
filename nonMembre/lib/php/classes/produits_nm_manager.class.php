@@ -20,10 +20,10 @@
             return $_produitsArray;
         }
         
-        public function getProduit_m($idprod) {
+        public function getProduit_m($id_prod) {
             $query="select * from produits where id_prod = :id_prod";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindvalue(1,$idprod,PDO::PARAM_INT);
+            $resultset->bindvalue(1,$id_prod,PDO::PARAM_INT);
             $resultset->execute();
             $nbr=$resultset->rowCount();
             while($data=$resultset->fetch()) {

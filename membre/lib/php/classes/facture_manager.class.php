@@ -7,7 +7,7 @@
             $this->_db = $db;
         }
         
-        public function getDetailFacture($idfacture) {
+        public function getDetailFacture($id_facture) {
             $query="select detail_facture.quantite,produits.prix,produits.titre,produits.id_prod, detail_facture.id_facture from detail_facture,produits where detail_facture.id_facture=:idfacture and detail_facture.id_prod=produits.id_prod";
             $resultset = $this->_db->prepare($query);
             $resultset->bindvalue(1,$id_facture,PDO::PARAM_INT);
