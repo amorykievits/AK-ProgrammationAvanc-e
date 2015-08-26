@@ -103,18 +103,7 @@
         <li><a href="index.php?page=achat_m&choix=hc">Hardcover</a></li>
     </ul>
 </div>
-<div id="table_default">
-    <table>
-        <tr>
-            <td>
-                <img src="./admin/images/fruit_produit_nm.jpg" alt="tpb" />
-            </td>
-            <td>
-                <img src="./admin/images/legume_produit_nm.jpg" alt="hc" />
-            </td>
-        </tr>
-    </table>
-</div>
+
 
         <?php
         }
